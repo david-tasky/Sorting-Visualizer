@@ -1,0 +1,120 @@
+#toolbar-container {
+    width: 100%;
+    height: 100px;
+    background-color: #34495e;
+}
+
+#toolbar-container:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.toolbar-button {
+    color: white;
+    font-size: 16px;
+    font-family: monospace;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.toolbar-button:hover {
+    color: gainsboro;
+}
+
+.unclickable-text {
+    color: white;
+    font-size: 16px;
+    font-family: monospace;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-right: 15px;
+    pointer-events: none;
+}
+
+.toolbar-button-click {
+    color: magenta;
+    font-size: 16px;
+    font-family: monospace;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.locked-button-click {
+    color: white;
+    font-size: 16px;
+    font-family: monospace;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-right: 15px;
+    pointer-events: none;
+    background-color: magenta;
+}
+
+#separator {
+    background-color: white;
+    display: inline-block;
+    width: 4px;
+    height: 60px;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#array-container {
+    width: 100%;
+    height: calc(100% - 100px);
+    position: absolute;
+    background-color: gainsboro;
+}
+
+.array-bar {
+    width: 8px;
+    display: inline-block;
+    margin: 0 1px;
+    vertical-align: top;
+    position: center;
+    background-color: CornflowerBlue;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    border: 1px solid white;
+    width: 100px;
+    height: 5px;
+    vertical-align: middle;
+    background: gainsboro;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: magenta;
+    cursor: pointer;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: magenta;
+    cursor: pointer;
+}
